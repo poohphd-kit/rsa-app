@@ -522,7 +522,14 @@ button, input { font: inherit; }
   font-size: 13px;
 }
 h1 { margin: 16px 0 0; font-size: clamp(38px, 6vw, 64px); letter-spacing: -0.04em; line-height: 1; }
-.hero-main p { margin: 18px 0 0; max-width: 850px; color: #dbeafe; line-height: 1.8; font-size: 17px; }
+.hero-main p {
+  margin: 18px 0 0;
+  max-width: 100%;
+  color: #dbeafe;
+  line-height: 1.8;
+  font-size: 17px;
+  white-space: nowrap;
+}
 .tabs {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
